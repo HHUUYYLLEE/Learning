@@ -30,9 +30,9 @@ public class account {
 		System.out.println("\tTên tài khoản là: "+ tenTaiKhoan +"\n"+ "\tSố dư: "+ soDu +"$");
 	}
 	   
-	public void rutTien(double wihtdrawMoney) {
-		if(wihtdrawMoney <= soDu) {
-			soDu -= wihtdrawMoney;
+	public void rutTien(double money) {
+		if(money <= soDu) {
+			soDu -= money;
 			System.out.println("\tSố tiền còn lại: "+ soDu + "$");
 		} else {
 			System.out.println("\tKhông thể rút nhiều hơn số tiền còn lại.");

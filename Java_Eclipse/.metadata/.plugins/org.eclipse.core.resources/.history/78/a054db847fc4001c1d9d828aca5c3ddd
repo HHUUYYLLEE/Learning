@@ -24,7 +24,7 @@ public class SV {
 				tk.rutTien(withdrawMoney);
 				break;
 			default:
-				System.out.print("\tThoát.");
+				System.out.print("\tExit.");
 				System.exit(0);
 				}
 			}

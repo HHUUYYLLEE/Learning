@@ -14,17 +14,17 @@ public class SV {
 				tk.thongTin();
 				break;
 			case 2:
-				System.out.print("\tThêm bao nhiêu: ");
+				System.out.print("Thêm bao nhiêu: ");
 				moreMoney = enter.nextDouble();
 				tk.themTien(1000);
 				break;
 			case 3:
-				System.out.print("\tRút bao nhiêu: ");
+				System.out.print("Rút bao nhiêu: ");
 				withdrawMoney = enter.nextDouble();
 				tk.rutTien(withdrawMoney);
 				break;
 			default:
-				System.out.print("\tThoát.");
+				System.out.print("Exit.");
 				System.exit(0);
 				}
 			}

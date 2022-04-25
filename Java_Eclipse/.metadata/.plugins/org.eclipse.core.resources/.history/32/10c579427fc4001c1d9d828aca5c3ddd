@@ -27,21 +27,22 @@ public class account {
 	}
 	   
 	public void thongTin() {
-		System.out.println("\tTên tài khoản là: "+ tenTaiKhoan +"\n"+ "\tSố dư: "+ soDu +"$");
+		System.out.println("Tên tài khoản là: "+ tenTaiKhoan +"\n"+ "Số dư: "+ soDu +"$");
 	}
 	   
-	public void rutTien(double wihtdrawMoney) {
-		if(wihtdrawMoney <= soDu) {
-			soDu -= wihtdrawMoney;
-			System.out.println("\tSố tiền còn lại: "+ soDu + "$");
+	public void rutTien(double money) {
+		if(money <= soDu) {
+			soDu -= money;
+			System.out.println("Rút bao nhiêu: "+ money +"$");
+			System.out.println("Số tiền còn lại: "+ soDu + "$");
 		} else {
-			System.out.println("\tKhông thể rút nhiều hơn số tiền còn lại.");
+			System.out.println("Không thể rút nhiều hơn số tiền còn lại.");
 		  }
 	}
 	   
 	public void themTien(double moreMoney) {
 		   soDu += moreMoney;
-		   System.out.println("\tSố tiền được thêm: "+ moreMoney + "$");
-		   System.out.println("\tSố tiền sau khi được thêm: "+ soDu + "$");
+		   System.out.println("Số tiền được thêm: "+ moreMoney + "$");
+		   System.out.println("Số tiền sau khi được thêm: "+ soDu + "$");
 	}
 }
