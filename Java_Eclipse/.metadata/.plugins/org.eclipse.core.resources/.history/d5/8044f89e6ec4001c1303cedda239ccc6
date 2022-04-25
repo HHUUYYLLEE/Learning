@@ -1,0 +1,48 @@
+
+public class account {
+	private String tenTaiKhoan;
+	private double soDu;
+	
+
+	public String getTenTaiKhoan() {
+		return tenTaiKhoan;
+	}
+
+	public void setTenTaiKhoan(String tenTaiKhoan) {
+		this.tenTaiKhoan = tenTaiKhoan;
+	}
+
+	public double getSoDu() {
+		return soDu;
+	}
+
+	public void setSoDu(double soDu) {
+		this.soDu = soDu;
+	}
+
+	public account(String tenTaiKhoan, double soDu) {
+		super();
+		this.tenTaiKhoan = tenTaiKhoan;
+		this.soDu = soDu;
+	}
+	   
+	public void thongTin() {
+		System.out.println("Tên tài khoản là: "+ tenTaiKhoan +"\n"+ "Số dư: "+ soDu +"$");
+	}
+	   
+	public void rutTien(double money) {
+		if(money <= soDu) {
+			soDu -= money;
+			System.out.println("Rút bao nhiêu: "+ money +"$");
+			System.out.println("Số tiền còn lại: "+ soDu + "$");
+		} else {
+			System.out.println("Không thể rút nhiều hơn số tiền còn lại.");
+		  }
+	}
+	   
+	public void themTien(double moreMoney) {
+		   soDu += moreMoney;
+		   System.out.println("Số tiền được thêm: "+ moreMoney + "$");
+		   System.out.println("Số tiền sau khi được thêm: "+ soDu + "$");
+	}
+}

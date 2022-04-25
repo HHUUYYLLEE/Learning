@@ -1,0 +1,9 @@
+
+public class SV {
+		public static void main(String[] args) {
+			account tk = new account("Pham Hong Duc", 4516);
+			tk.thongTin();
+			tk.rutTien(400);
+			tk.themTien(4000);
+		}
+}
