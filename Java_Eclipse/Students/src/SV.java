@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class SV {
 		public static void main(String[] args) {
 			double moreMoney;
